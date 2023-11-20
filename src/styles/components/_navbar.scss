@@ -4,6 +4,11 @@
     width: 100vw;
 
     background-color: $primary;
+    color: $background;
+
+    display: flex;
+
+    position: fixed;
 
     .logo_container {
 
@@ -15,6 +20,31 @@
 
         .logo {
             height: 64px;
+            width: 64px;
+        }
+    }
+
+    .buttons {
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        width: calc(100% - (($nav-main_logo-size + $margin) * 2));
+
+        ._button {
+            margin: 0 $margin;
+
+            font-size: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &::selection {
+                color: none;
+                background-color: none;
+            }
         }
     }
 }

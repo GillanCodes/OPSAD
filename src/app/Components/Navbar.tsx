@@ -4,6 +4,12 @@ export default function Navbar() {
             <div className="logo_container">
                 <img src="/next.svg" alt="Logo" className="logo" />
             </div>
+            <div className="buttons">
+                <p className="_button">Acceuil</p>
+                <p className="_button">A Propos</p>
+                <p className="_button">Mes Services</p>
+                <p className="_button">Lorem</p>
+            </div>
         </nav>
     )
 }
