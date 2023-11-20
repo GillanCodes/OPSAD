@@ -1,6 +1,8 @@
 'use client';
+import { useCallback, useEffect } from "react";
 
-import { useEffect } from "react";
+var previousPos:number;
+var scrollDiff:number;
 
 export default function Home() {
 
@@ -12,6 +14,26 @@ export default function Home() {
             behavior: "smooth"
         });
     }
+
+    function scrollDiff(curentPos:number, oldPos:number) {
+        var pos = curentPos - oldPos
+        return pos > 0
+    }
+
+    const onScroll = useCallback((event:Event) => {
+        const win:Window = window;
+        if (previousPos == 0 && scrollDiff(win.scrollY, previousPos)) arrowClick();
+        previousPos = win.scrollY;
+        console.log(previousPos)
+    }, [])
+
+    useEffect(() => {
+        const win:Window = window;
+        win.addEventListener("scroll", onScroll, {passive: true});
+        return () => {
+            win.removeEventListener("scroll", onScroll);
+        }
+    }, [])
 
     return (
         <div className="home">
