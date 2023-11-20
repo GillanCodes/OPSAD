@@ -1,0 +1,20 @@
+.main_nav {
+
+    height: $nav-main_height;
+    width: 100vw;
+
+    background-color: $primary;
+
+    .logo_container {
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        margin-left: $margin;
+
+        .logo {
+            height: 64px;
+        }
+    }
+}
