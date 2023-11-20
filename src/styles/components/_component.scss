@@ -1,0 +1,41 @@
+.components
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    .component
+    {
+        width: 90%;
+        margin: ($margin * 2) $margin;
+
+        display: flex;
+
+        .image
+        {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .text
+        {
+            .comp_title
+            {
+                margin: $margin calc($margin * 2);
+                text-decoration: underline;
+                font-size: 25px;
+            }
+
+            p
+            {
+                margin: 0 $margin;
+                font-size: 18px;
+            }
+        }
+    }
+}
