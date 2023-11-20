@@ -1,0 +1,50 @@
+.home {
+ 
+    .container
+    {
+        height: calc(100vh - $nav-main_height);
+        padding-top: $nav-main_height;
+    }
+
+    ._color_shape
+    {
+        height: 100%;
+        background-color: $secondary;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texts
+    {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .__title
+        {
+            font-size: 64px;
+            color: $text;
+            text-decoration: underline;
+            margin: $margin 0;
+        }
+
+        .__subtitle
+        {
+
+        }
+    }
+
+    .arrow
+    {
+        margin: $margin;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
