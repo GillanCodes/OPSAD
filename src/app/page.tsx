@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import ScrollableComponent from "./Components/ScrollableComponent";
 
-import ScrollableComponentsText from "../texts/ScrollableComponents.json";
+import componentsText from "../texts/components.json";
 import cardsArray from "../texts/cards.json";
 
 export default function app() {
@@ -14,9 +14,18 @@ export default function app() {
             <Home />
 
             <div className="components">
-                <ComponentRight />
-                <ComponentLeft />
-                <ScrollableComponent title={ScrollableComponentsText[1].title} cards={cardsArray[0]} />
+                {componentsText[0].map((comp) => {
+                    switch(comp.type){
+                            case "left":
+                                return <ComponentLeft title={comp.title} text={comp.text} url={comp.url} />
+                            case "right":
+                                return <ComponentRight title={comp.title} text={comp.text} url={comp.url} />
+                            case "scrollable":
+                                return <ScrollableComponent title={comp.title} cards={cardsArray[0]} />
+                            default:
+                                break
+                        }
+                })}
             </div>
 
         </main> 
