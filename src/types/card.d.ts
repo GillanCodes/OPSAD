@@ -1,4 +1,5 @@
 export interface ICards
+{
     [
         {
             url:string, 
