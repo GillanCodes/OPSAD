@@ -3,7 +3,7 @@ export default function ComponentRight() {
         <div className="component">
             
             <div className="image-container">
-                <img src="/template.jpeg" alt="img" className="image" />
+                <img src="/dev/five.jpg" alt="img" className="image" />
             </div>
 
             <div className="text">

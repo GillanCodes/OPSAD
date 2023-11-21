@@ -8,7 +8,7 @@ export default function ComponentLeft() {
             </div>
 
             <div className="image-container">
-                <img src="/template.jpeg" alt="img" className="image" />
+                <img src="/dev/one.jpg" alt="img" className="image" />
             </div>
 
 
