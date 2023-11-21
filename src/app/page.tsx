@@ -6,6 +6,7 @@ import ScrollableComponent from "./Components/ScrollableComponent";
 
 import componentsText from "../texts/components.json";
 import cardsArray from "../texts/cards.json";
+import Footer from "./Components/Footer";
 
 export default function app() {
     return (
@@ -28,6 +29,7 @@ export default function app() {
                 })}
             </div>
 
+            <Footer />
         </main> 
     )
 }

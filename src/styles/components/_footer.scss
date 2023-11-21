@@ -1,0 +1,28 @@
+.footer
+{
+
+    height: $footer_height;
+
+    background-color: $secondary;
+
+    .container
+    {
+
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .buttons {
+            margin: $margin;
+
+            *
+            {
+                margin: $margin;
+            }
+        }
+    }
+
+}
