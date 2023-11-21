@@ -17,7 +17,7 @@ export default function ContactForm() {
                         <input type="text" className="input" placeholder="Numero de téléphone" />
                     </div> 
                     <textarea className="textarea" placeholder="Votre demande"></textarea>
-                    <button>Envoyer</button>
+                    <button className="submit-btn">Envoyer</button>
                 </form>
 
             </div>

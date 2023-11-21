@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
 
-    margin: ($margin * 10) 0;
+    margin: ($margin * 5) 0;
 
     .container
     {
@@ -17,6 +17,13 @@
         justify-content: center;
         align-items: center;
         
+        .__title
+        {
+            text-decoration: underline;
+            font-size: 20px;
+            margin-bottom: $margin;
+        }
+
     }
 
     form
@@ -26,8 +33,9 @@
         justify-content: center;
         align-items: center;
         padding: $margin;
-        border: 1px black solid;
+        border: 1px $accent solid;
         border-radius: 10px;
+        box-shadow:16px 20px 32px 0px rgba(0,0,0,0.55);
 
         .field
         {
@@ -38,11 +46,40 @@
                 margin: 5px;
                 height: 24px;
                 font-size: 20px;
+                border-radius: 10px;
+                padding: 5px;
+                border: 1px $accent solid;
             }
 
             .input.full-width
             {
                 width: calc(100% - 19px);
+            }
+        }
+
+        .textarea
+        {
+            resize: none;
+            height: 150px;
+            width: calc(100% - 19px);
+            border-radius: 10px;
+            border: solid 1px $accent;
+            padding: 5px;
+        }
+
+        .submit-btn
+        {
+            border: none;
+            border-radius: 10px;
+            margin: 5px 0 0 0;
+            padding: $margin;
+            background-color: $secondary;
+            cursor: pointer;
+
+            &:hover
+            {
+                background-color: $accent;
+                color: $background;
             }
         }
     }
