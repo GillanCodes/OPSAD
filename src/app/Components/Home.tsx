@@ -1,7 +1,7 @@
 'use client';
 import { useCallback, useEffect } from "react";
 
-var previousPos:number;
+var previousPos:number = 0;
 var scrollDiff:number;
 
 export default function Home() {
