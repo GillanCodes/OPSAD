@@ -7,6 +7,7 @@ import ScrollableComponent from "./Components/ScrollableComponent";
 import componentsText from "../texts/components.json";
 import cardsArray from "../texts/cards.json";
 import Footer from "./Components/Footer";
+import ContactForm from "./Components/ContactForm";
 
 export default function app() {
     return (
@@ -28,7 +29,7 @@ export default function app() {
                         }
                 })}
             </div>
-
+            <ContactForm />
             <Footer />
         </main> 
     )

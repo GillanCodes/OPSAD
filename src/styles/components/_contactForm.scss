@@ -1,0 +1,50 @@
+.contact-form
+{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: ($margin * 10) 0;
+
+    .container
+    {
+        width: $app_width;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: $margin;
+        border: 1px black solid;
+        border-radius: 10px;
+
+        .field
+        {
+            width: 100%;
+
+            .input
+            {
+                margin: 5px;
+                height: 24px;
+                font-size: 20px;
+            }
+
+            .input.full-width
+            {
+                width: calc(100% - 19px);
+            }
+        }
+    }
+
+}
