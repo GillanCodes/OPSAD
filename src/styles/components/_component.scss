@@ -30,12 +30,17 @@
                 text-decoration: underline;
                 font-size: 25px;
             }
-
             p
             {
                 margin: 0 $margin;
                 font-size: 18px;
             }
         }
+
+        .cards
+        {
+            display: flex;
+        }
+        
     }
 }

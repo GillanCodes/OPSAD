@@ -1,11 +1,14 @@
+import { ICard, ICards } from "@/types/card";
 import Card from "./Card";
 
-export default function ScrollableComponent() {
+export default function ScrollableComponent({title, cards}:{title:string, cards:ICards}) {
   return (
-    <div className="component">
-        <h3 className="__title">Title</h3>
+    <div className="scrollable-component">
+        <h3 className="__title">{title}</h3>
         <div className="cards">
-            <Card />
+            {cards.map((card:ICard) => {
+
+            })}
         </div>
     </div>
   )

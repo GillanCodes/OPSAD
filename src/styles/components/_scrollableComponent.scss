@@ -1,0 +1,23 @@
+.scrollable-component
+{
+    width: 70%;
+    margin: ($margin * 4) $margin;
+
+    display: flex;
+    flex-direction: column;
+
+    .__title
+    {
+        margin: $margin calc($margin * 2);
+        text-decoration: underline;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .cards
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
