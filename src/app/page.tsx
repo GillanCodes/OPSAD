@@ -4,6 +4,9 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import ScrollableComponent from "./Components/ScrollableComponent";
 
+import ScrollableComponentsText from "../texts/ScrollableComponents.json";
+import cardsArray from "../texts/cards.json";
+
 export default function app() {
     return (
         <main className="global_app">
@@ -13,7 +16,7 @@ export default function app() {
             <div className="components">
                 <ComponentRight />
                 <ComponentLeft />
-                <ScrollableComponent />
+                <ScrollableComponent title={ScrollableComponentsText[1].title} cards={cardsArray[0]} />
             </div>
 
         </main> 
