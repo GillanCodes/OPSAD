@@ -1,0 +1,23 @@
+$card_size: 150px;
+
+.card
+{
+
+    margin: $margin;
+
+    .head
+    {
+
+        height: $card_size;
+        width: $card_size;
+
+        .card-image
+        {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+}
