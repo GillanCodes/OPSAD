@@ -9,7 +9,7 @@ export default function Home() {
     const arrowClick = () => {
         const win:Window = window;
         win.scroll({
-            top: win.innerHeight,
+            top: (win.innerHeight - 100),
             left: 0,
             behavior: "smooth"
         });
