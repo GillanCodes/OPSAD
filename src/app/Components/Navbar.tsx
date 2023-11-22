@@ -12,6 +12,7 @@ export default function Navbar() {
                         <a className="_button" href={`#${comp.title.split(' ').join('').toLowerCase()}`}>{comp.title}</a>
                    )
                 })}
+                <a className="_button" href="#contactme" >Me Contacter</a>
             </div>
         </nav>
     )

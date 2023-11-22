@@ -1,7 +1,7 @@
 export default function ContactForm() {
     return (
         <div className="contact-form">
-
+            <span className="target" id="contactme"></span>
             <div className="container">
                 <h3 className="__title">Contactez moi !</h3>
                 <form>
