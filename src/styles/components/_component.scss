@@ -7,6 +7,17 @@
 
     width: 100%;
 
+    .scrollable-component, .component
+    {
+        .target
+        {
+            visibility: none;
+            display: block;
+            height: $nav-main_height;
+            margin-top: calc(0px - ($nav-main_height + 10px))
+        }
+    }
+
     .component
     {
         width: $app_width;

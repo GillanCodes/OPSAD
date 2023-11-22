@@ -1,7 +1,7 @@
-export default function ComponentRight({title, text, url}: {title:string|undefined, text:string|undefined, url:string|undefined}) {
+export default function ComponentRight({title, text, url, id}: {title:string|undefined, text:string|undefined, url:string|undefined, id:string}) {
     return (
         <div className="component">
-            
+            <span className="target" id={id}></span>
             <div className="image-container">
                 <img src={url} alt="img" className="image" />
             </div>

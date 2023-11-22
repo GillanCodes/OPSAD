@@ -19,11 +19,11 @@ export default function app() {
                 {componentsText[0].map((comp) => {
                     switch(comp.type){
                             case "left":
-                                return <ComponentLeft title={comp.title} text={comp.text} url={comp.url} />
+                                return <ComponentLeft title={comp.title} text={comp.text} url={comp.url} id={comp.title.split(' ').join('').toLocaleLowerCase()}  />
                             case "right":
-                                return <ComponentRight title={comp.title} text={comp.text} url={comp.url} />
+                                return <ComponentRight title={comp.title} text={comp.text} url={comp.url} id={comp.title.split(' ').join('').toLocaleLowerCase()} />
                             case "scrollable":
-                                return <ScrollableComponent title={comp.title} cards={cardsArray[0]} />
+                                return <ScrollableComponent title={comp.title} cards={cardsArray[0]} id={comp.title.split(' ').join('').toLocaleLowerCase()} />
                             default:
                                 break
                         }

@@ -1,7 +1,7 @@
-export default function ComponentLeft({title, text, url}: {title:string|undefined, text:string|undefined, url:string|undefined}) {
+export default function ComponentLeft({title, text, url, id}: {title:string|undefined, text:string|undefined, url:string|undefined, id:string}) {
     return (
         <div className="component">
-            
+            <span className="target" id={id}></span>
             <div className="text">
                 <h3 className="comp_title">{title}</h3>
                 <p>{text}</p>
