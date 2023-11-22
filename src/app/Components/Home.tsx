@@ -24,7 +24,6 @@ export default function Home() {
         const win:Window = window;
         if (previousPos == 0 && scrollDiff(win.scrollY, previousPos)) arrowClick();
         previousPos = win.scrollY;
-        console.log(previousPos)
     }, [])
 
     useEffect(() => {
