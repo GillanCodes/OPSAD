@@ -2,7 +2,7 @@ export default function Navbar() {
     return (
         <nav className="main_nav">
             <div className="logo_container">
-                <img src="/next.svg" alt="Logo" className="logo" />
+                <img src="/dev/logo.jpg" alt="Logo" className="logo" />
             </div>
             <div className="buttons">
                 <p className="_button">Accueil</p>
