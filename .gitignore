@@ -26,6 +26,7 @@ yarn-debug.log*
 yarn-error.log*
 /public/template.jpeg
 /public/dev
+/src/config
 
 # local env files
 .env*.local

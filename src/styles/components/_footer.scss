@@ -18,6 +18,13 @@
         .buttons {
             margin: $margin;
 
+            .icon
+            {
+                height: 32px;
+                width: 32px;
+                object-fit: contain;
+            }
+
             *
             {
                 margin: $margin;
