@@ -4,10 +4,12 @@ export default function Footer() {
             <div className="container">
                 <p className="copyright">GillanCodes &copy; copyright, 2023.</p>
                 <div className="buttons">
-                    <button>H</button>
-                    <button>H</button>
-                    <button>H</button>
-                    <button>H</button>
+                    <a href="" target="_BLANK">
+                        <img src="/icons/linkedin.png" alt="Linkedin" className="icon" />
+                    </a>
+                    <a href="mailto:">
+                        <img src="/icons/email.png" alt="Linkedin" className="icon" />
+                    </a>
                 </div>
             </div>
         </footer>
