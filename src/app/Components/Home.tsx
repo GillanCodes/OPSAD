@@ -43,7 +43,7 @@ export default function Home() {
                         <h2 className="__subtitle">Assistante Virtuelle et Opératrice de saisie</h2>
                     </div> 
                     <div className="arrow">
-                        <p onClick={arrowClick}>\/</p>
+                        <img src="/icons/down_arrow.png" alt="\/" onClick={arrowClick} className="arrow-icon" />
                     </div>
                 </div>
             </div>

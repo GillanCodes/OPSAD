@@ -33,11 +33,6 @@
             text-decoration: underline;
             margin: $margin 0;
         }
-
-        .__subtitle
-        {
-
-        }
     }
 
     .arrow
@@ -45,6 +40,12 @@
         margin: $margin;
         font-size: 20px;
         cursor: pointer;
+
+        .arrow-icon
+        {
+            height: 48px;
+            width: 48px;
+        }
     }
 
 }
