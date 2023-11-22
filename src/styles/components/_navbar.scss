@@ -42,6 +42,13 @@
             text-decoration: underline;
             cursor: pointer;
 
+            color: $background;
+
+            &:hover
+            {
+                color: $secondary;
+            }
+
             &::selection {
                 color: none;
                 background-color: none;
