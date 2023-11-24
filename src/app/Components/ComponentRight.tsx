@@ -1,4 +1,4 @@
-export default function ComponentRight({title, text, url, id}: {title:string|undefined, text:string|undefined, url:string|undefined, id:string}) {
+export default function ComponentRight({title, text, url, id}: {title:string|undefined, text:string, url:string|undefined, id:string}) {
     return (
         <div className="component">
             <span className="target" id={id}></span>
@@ -8,7 +8,7 @@ export default function ComponentRight({title, text, url, id}: {title:string|und
 
             <div className="text">
                 <h3 className="comp_title">{title}</h3>
-                <p>{text}</p>
+                <div dangerouslySetInnerHTML={{__html: text}} className="comp_text"></div>
             </div>
 
         </div>
