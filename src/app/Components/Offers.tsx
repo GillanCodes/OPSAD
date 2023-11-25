@@ -8,8 +8,8 @@ export default function Offers({title, offers, id} : {title:string, offers:any, 
             {offers.map((offer:any) => {
                 return (
                     <div className="offer">
-                        <h3>{offer.title}</h3>
-                        <div dangerouslySetInnerHTML={{__html:DOMPurify.sanitize(offer.desc)}}></div>
+                        <h3 className="title">{offer.title}</h3>
+                        <div className="offer-desc" dangerouslySetInnerHTML={{__html:DOMPurify.sanitize(offer.desc)}}></div>
                         <p className="price">{offer.price}</p>
                     </div>
                 )

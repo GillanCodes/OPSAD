@@ -53,6 +53,51 @@
         {
             display: flex;
         }
+
+        .offers
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+
+            height: 500px;
+
+            .offer
+            {
+                margin: $margin;
+                padding: $margin;
+
+                border: 1px $accent solid;
+                border-radius: 10px;
+
+                height: 400px;
+                min-width: 300px;
+
+                .title
+                {
+                    font-size: 20px;
+                    text-align: center;
+                    text-decoration: underline;
+
+                    height: 50px;
+                    margin: $margin;
+                }
+
+                .offer-desc
+                {
+                    height: calc(400px - 100px - ($margin)*4);
+                }
+
+                .price
+                {
+                    text-align: center;
+                    font-size: 18px;
+                    text-decoration: underline;
+                    height: 50px;
+                    margin: $margin;
+                }
+            }
+        }
         
     }
 }
