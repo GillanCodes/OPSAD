@@ -10,6 +10,7 @@ import componentsText from "../texts/components.json";
 import cardsArray from "../texts/cards.json";
 import Footer from "./Components/Footer";
 import ContactForm from "./Components/ContactForm";
+import Offers from './Components/Offers';
 
 function s(t:string | undefined){
     t = t + "";
@@ -31,6 +32,8 @@ export default function app() {
                                 return <ComponentRight title={s(comp.title)} text={s(comp.text)} url={comp.url} id={comp.title.split(' ').join('').toLocaleLowerCase()} />
                             case "scrollable":
                                 return <ScrollableComponent title={comp.title} cards={cardsArray[0]} id={comp.title.split(' ').join('').toLocaleLowerCase()} />
+                            case "offers":
+                                return <Offers title={comp.title} offers={comp.offers} id={comp.title.split(' ').join('').toLocaleLowerCase()} />
                             default:
                                 break
                         }
