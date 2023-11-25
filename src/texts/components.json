@@ -22,6 +22,22 @@
         {
             "type": "scrollable",
             "title" : "Title 4"
+        },
+        {
+            "type": "offers",
+            "title": "test",
+            "offers" : [
+                {
+                    "title": "Test",
+                    "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sunt a quia nesciunt cupiditate sequi cumque tenetur reiciendis nam asperiores. Iste saepe explicabo molestiae aperiam voluptas cupiditate dolorum dignissimos possimus?",
+                    "price" : "10e / heure"
+                },
+                {
+                    "title": "Test 2",
+                    "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sunt a quia nesciunt cupiditate sequi cumque tenetur reiciendis nam asperiores. Iste saepe explicabo molestiae aperiam voluptas cupiditate dolorum dignissimos possimus?",
+                    "price" : "20e / heure"
+                }
+            ]
         }
     ]
 }
