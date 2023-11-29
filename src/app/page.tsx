@@ -6,8 +6,8 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import ScrollableComponent from "./Components/ScrollableComponent";
 
-import componentsText from "../texts/components.json";
-import cardsArray from "../texts/cards.json";
+import componentsText from "../texts_prod/components.json";
+import cardsArray from "../texts_prod/cards.json";
 import Footer from "./Components/Footer";
 import ContactForm from "./Components/ContactForm";
 import Offers from './Components/Offers';

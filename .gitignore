@@ -27,6 +27,7 @@ yarn-error.log*
 /public/template.jpeg
 /public/dev
 /src/config
+/src/texts_prod
 
 # local env files
 .env*.local

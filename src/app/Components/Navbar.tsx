@@ -1,4 +1,4 @@
-import componentsText from "../../texts/components.json";
+import componentsText from "../../texts_prod/components.json";
 
 export default function Navbar() {
     return (
