@@ -1,57 +1,117 @@
-.main_nav {
+@media (min-width: 640px) {
+    .main_nav {
 
-    height: $nav-main_height;
-    width: 100vw;
+        height: $nav-main_height;
+        width: 100vw;
 
-    background-color: $primary;
-    color: $background;
+        background-color: $primary;
+        color: $background;
 
-    display: flex;
-
-    position: fixed;
-
-    .logo_container {
-
-        height: 100%;
         display: flex;
-        align-items: center;
 
-        margin-left: $margin;
+        position: fixed;
 
-        .logo {
-            height: 64px;
-            width: 64px;
-            object-fit: cover;
+        .logo_container {
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            margin-left: $margin;
+
+            .logo {
+                height: 64px;
+                width: 64px;
+                object-fit: cover;
+            }
+        }
+
+        .buttons {
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            width: calc(100% - (($nav-main_logo-size + $margin) * 2));
+
+            ._button {
+                margin: 0 $margin;
+
+                font-size: 16px;
+                text-decoration: underline;
+                cursor: pointer;
+
+                color: $background;
+
+                &:hover
+                {
+                    color: $secondary;
+                }
+
+                &::selection {
+                    color: none;
+                    background-color: none;
+                }
+            }
         }
     }
+}
 
-    .buttons {
+@media (max-width: 640px) {
+    .main_nav {
 
-        position: relative;
+        height: $nav-main_height;
+        width: 100vw;
+
+        background-color: $primary;
+        color: $background;
+
         display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
 
-        width: calc(100% - (($nav-main_logo-size + $margin) * 2));
+        position: fixed;
 
-        ._button {
-            margin: 0 $margin;
+        .logo_container {
 
-            font-size: 16px;
-            text-decoration: underline;
-            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
 
-            color: $background;
+            margin-left: $margin;
 
-            &:hover
-            {
-                color: $secondary;
+            .logo {
+                display: none;
             }
+        }
 
-            &::selection {
-                color: none;
-                background-color: none;
+        .buttons {
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: scroll;
+
+            width: 100%;
+
+            ._button {
+                margin: 0 $margin;
+
+                font-size: 12px;
+                text-decoration: underline;
+                cursor: pointer;
+
+                color: $background;
+
+                &:hover
+                {
+                    color: $secondary;
+                }
+
+                &::selection {
+                    color: none;
+                    background-color: none;
+                }
             }
         }
     }

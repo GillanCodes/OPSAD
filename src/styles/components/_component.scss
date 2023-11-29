@@ -1,104 +1,215 @@
-.components
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 640px){
 
-    width: 100%;
-
-    .scrollable-component, .component
+    .components
     {
-        .target
-        {
-            visibility: none;
-            display: block;
-            height: $nav-main_height;
-            margin-top: calc(0px - ($nav-main_height + 10px))
-        }
-    }
-
-    .component
-    {
-        width: $app_width;
-        margin: ($margin * 4) $margin;
-
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .image
+        width: 100%;
+
+        
+
+        .scrollable-component, .component
         {
-            width: 500px;
-            height: 500px;
-            overflow: hidden;
-            object-fit: cover;
+            .target
+            {
+                visibility: none;
+                display: block;
+                height: $nav-main_height;
+                margin-top: calc(0px - ($nav-main_height + 10px))
+            }
         }
 
-        .text
+        .component
         {
-            .comp_title
+            width: $app_width;
+            margin: ($margin * 4) $margin;
+
+            display: flex;
+
+            .image
             {
-                margin: $margin calc($margin * 2);
-                text-decoration: underline;
-                font-size: 25px;
+                width: 500px;
+                height: 500px;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            .text
+            {
+                .comp_title
+                {
+                    margin: $margin calc($margin * 2);
+                    text-decoration: underline;
+                    font-size: 25px;
+                }
+                
+                .comp_text
+                {
+                    margin: 0 $margin;
+                    font-size: 18px;
+                }
+            }
+
+            .cards
+            {
+                display: flex;
+            }
+
+            .offers
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                align-items: center;
+
+                height: 500px;
+
+                .offer
+                {
+                    margin: $margin;
+                    padding: $margin;
+
+                    border: 1px $accent solid;
+                    border-radius: 10px;
+
+                    height: 400px;
+                    width: 300px;
+
+                    .title
+                    {
+                        font-size: 20px;
+                        text-align: center;
+                        text-decoration: underline;
+
+                        height: 50px;
+                        margin: $margin;
+                    }
+
+                    .offer-desc
+                    {
+                        height: calc(400px - 100px - ($margin)*4);
+                    }
+
+                    .price
+                    {
+                        text-align: center;
+                        font-size: 18px;
+                        text-decoration: underline;
+                        height: 50px;
+                        margin: $margin;
+                    }
+                }
             }
             
-            .comp_text
-            {
-                margin: 0 $margin;
-                font-size: 18px;
-            }
         }
+    }
+}
 
-        .cards
-        {
-            display: flex;
-        }
+@media (max-width: 640px){
+    .components
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .offers
-        {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: scroll;
-            align-items: center;
+        width: 100%;
 
-            height: 500px;
-
-            .offer
-            {
-                margin: $margin;
-                padding: $margin;
-
-                border: 1px $accent solid;
-                border-radius: 10px;
-
-                height: 400px;
-                width: 300px;
-
-                .title
-                {
-                    font-size: 20px;
-                    text-align: center;
-                    text-decoration: underline;
-
-                    height: 50px;
-                    margin: $margin;
-                }
-
-                .offer-desc
-                {
-                    height: calc(400px - 100px - ($margin)*4);
-                }
-
-                .price
-                {
-                    text-align: center;
-                    font-size: 18px;
-                    text-decoration: underline;
-                    height: 50px;
-                    margin: $margin;
-                }
-            }
-        }
         
+
+        .scrollable-component, .component
+        {
+            .target
+            {
+                visibility: none;
+                display: block;
+                height: $nav-main_height;
+                margin-top: calc(0px - ($nav-main_height + 10px))
+            }
+        }
+
+        .component
+        {
+            width: 100%;
+            margin: ($margin * 4) $margin;
+
+            display: flex;
+
+            .image
+            {
+                display: none;
+            }
+
+            .text
+            {
+                .comp_title
+                {
+                    margin: $margin calc($margin * 2);
+                    text-decoration: underline;
+                    font-size: 25px;
+                }
+                
+                .comp_text
+                {
+                    margin: 0 $margin;
+                    font-size: 18px;
+                }
+            }
+
+            .cards
+            {
+                display: flex;
+            }
+
+            .offers
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                height: fit-content;
+
+                .offer
+                {
+                    margin: $margin;
+                    padding: $margin;
+
+                    border: 1px $accent solid;
+                    border-radius: 10px;
+
+                    height: 400px;
+                    width: 300px;
+
+                    .title
+                    {
+                        font-size: 20px;
+                        text-align: center;
+                        text-decoration: underline;
+
+                        height: 50px;
+                        margin: $margin;
+                    }
+
+                    .offer-desc
+                    {
+                        height: calc(400px - 100px - ($margin)*4);
+                    }
+
+                    .price
+                    {
+                        text-align: center;
+                        font-size: 18px;
+                        text-decoration: underline;
+                        height: 50px;
+                        margin: $margin;
+                    }
+                }
+            }
+            
+        }
     }
 }
