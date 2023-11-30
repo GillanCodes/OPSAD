@@ -20,6 +20,10 @@
                 height: $nav-main_height;
                 margin-top: calc(0px - ($nav-main_height + 10px))
             }
+            
+            box-shadow: 16px 20px 32px 0px $primary;
+            border-radius: 15px;
+            
         }
 
         .component
@@ -29,16 +33,22 @@
 
             display: flex;
 
+            padding: $margin;
+
             .image
             {
                 width: 500px;
                 height: 500px;
                 overflow: hidden;
                 object-fit: cover;
+                border-radius: 10px;
             }
 
             .text
             {
+
+                width: calc(100% - 500px);
+
                 .comp_title
                 {
                     margin: $margin calc($margin * 2);
@@ -50,6 +60,7 @@
                 {
                     margin: 0 $margin;
                     font-size: 18px;
+                    
                 }
             }
 
@@ -64,6 +75,8 @@
                 flex-wrap: nowrap;
                 overflow: scroll;
                 align-items: center;
+                justify-content: center;
+                width: 100%;
 
                 height: 500px;
 
