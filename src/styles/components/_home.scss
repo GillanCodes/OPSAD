@@ -10,7 +10,10 @@
         ._color_shape
         {
             height: 100%;
-            background-color: $secondary;
+            background-image: url('/dev/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: 0;
+            background-size: cover;
 
             display: flex;
             flex-direction: column;
@@ -27,14 +30,35 @@
             justify-content: center;
             align-items: center;
 
-            .__title
+            .content
             {
-                font-size: 64px;
-                color: $text;
-                text-decoration: underline;
-                margin: $margin 0;
+
+                width: 40%;
+                height: 40%;
+
+                background-color: rgba($color: #000000, $alpha: .6);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                color: $background;
+
+                border-radius: 15px;
+
+                .__title
+                {
+                    font-size: 64px;
+                    text-decoration: underline;
+                    margin-bottom: $margin;
+                    text-align: center;
+                    
+                }
+    
             }
-        }
+
+       }
 
         .arrow
         {
@@ -64,7 +88,8 @@
         ._color_shape
         {
             height: 100%;
-            background-color: $secondary;
+            background-image: url('/dev/bg.jpg');
+            // background-color: $secondary;
 
             display: flex;
             flex-direction: column;

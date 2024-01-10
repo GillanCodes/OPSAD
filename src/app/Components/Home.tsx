@@ -39,8 +39,10 @@ export default function Home() {
             <div className="container">
                 <div className="_color_shape">
                     <div className="texts">
-                        <h1 className="__title">ADSOD</h1>
-                        <h2 className="__subtitle">Assistante Virtuelle et Opératrice de saisie</h2>
+                        <div className="content">
+                            <h1 className="__title">ADSOD</h1>
+                            <h2 className="__subtitle">Assistante Virtuelle et Opératrice de saisie</h2>
+                        </div>
                     </div> 
                     <div className="arrow">
                         <img src="/icons/down_arrow.png" alt="\/" onClick={arrowClick} className="arrow-icon" />
