@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import '../styles/index.scss';
 
 export const metadata: Metadata = {
-  title: 'ADSOD',
+  title: 'OPSAD',
   description: 'Opératrice de saisie a domicile',
 }
 
