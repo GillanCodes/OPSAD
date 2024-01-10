@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="container">
-                <p className="copyright">GillanCodes &copy; copyright, 2023.</p>
+                <p className="copyright">2023 - 2024 © GillanCodes. Tous droits réservés.</p>
                 <div className="buttons">
                     <a href="" target="_BLANK">
                         <img src="/icons/linkedin.png" alt="Linkedin" className="icon" />
