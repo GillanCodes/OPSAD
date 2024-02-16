@@ -90,8 +90,9 @@
         ._color_shape
         {
             height: 100%;
-            background-image: url('/dev/bg.jpg');
-            // background-color: $secondary;
+            background-image: url('/imgs/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
 
             display: flex;
             flex-direction: column;
@@ -107,11 +108,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: white;
 
+            
             .__title
             {
                 font-size: 32px;
-                color: $text;
                 text-decoration: underline;
                 margin: $margin 0;
             }
