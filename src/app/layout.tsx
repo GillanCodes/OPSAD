@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import '../styles/index.scss';
 
 export const metadata: Metadata = {
-  title: 'OPSAD',
-  description: 'Opératrice de saisie a domicile',
+  title: 'OdsAv',
+  description: 'Opératrice de saisie et assistante Virtuelle',
 }
 
 export default function RootLayout({
