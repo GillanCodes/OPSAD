@@ -10,6 +10,9 @@ export default function Footer() {
                     <a href="mailto:">
                         <img src="/icons/email.png" alt="Linkedin" className="icon" />
                     </a>
+                    <a href="http://malt.com">
+                        <img src="/icons/malt.svg" alt="Linkedin" className="icon" />
+                    </a>
                 </div>
             </div>
         </footer>
