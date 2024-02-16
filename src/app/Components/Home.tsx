@@ -40,8 +40,8 @@ export default function Home() {
                 <div className="_color_shape">
                     <div className="texts">
                         <div className="content">
-                            <h1 className="__title">OPSAD</h1>
-                            <h2 className="__subtitle">Assistante Virtuelle et Opératrice de saisie</h2>
+                            <h1 className="__title">OdsAv</h1>
+                            <h2 className="__subtitle">Opératrice de saisie et Assistante Virtuelle</h2>
                         </div>
                     </div> 
                     <div className="arrow">
