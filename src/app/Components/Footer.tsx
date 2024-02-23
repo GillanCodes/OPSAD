@@ -4,13 +4,13 @@ export default function Footer() {
             <div className="container">
                 <p className="copyright">2023 - 2024 © GillanCodes. Tous droits réservés.</p>
                 <div className="buttons">
-                    <a href="" target="_BLANK">
+                    <a href="https://fr.linkedin.com/in/sylvie-odsav" target="_BLANK">
                         <img src="/icons/linkedin.png" alt="Linkedin" className="icon" />
                     </a>
-                    <a href="mailto:">
+                    <a href="mailto:contact.odsav@laposte.net">
                         <img src="/icons/email.png" alt="Linkedin" className="icon" />
                     </a>
-                    <a href="http://malt.com">
+                    <a href="http://malt.com" target="_BLANK">
                         <img src="/icons/malt.svg" alt="Linkedin" className="icon" />
                     </a>
                 </div>
