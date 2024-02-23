@@ -10,7 +10,11 @@ export default function Offers({title, offers, id} : {title:string, offers:any, 
                     <div className="offer" key={key}>
                         <h3 className="title">{offer.title}</h3>
                         <div className="offer-desc" dangerouslySetInnerHTML={{__html:DOMPurify.sanitize(offer.desc)}}></div>
-                        <p className="price">{offer.price}</p>
+                        <div className="price-box">
+                            <p className="price">{offer.price}</p>
+                            <p className="tva">TVA non applicable art.293b du CGI</p>
+                        </div>
+                        
                     </div>
                 )
             })}
