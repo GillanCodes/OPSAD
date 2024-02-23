@@ -72,13 +72,13 @@
             .offers
             {
                 display: flex;
-                flex-wrap: nowrap;
-                overflow: scroll;
+                flex-wrap: wrap;
+                // overflow: scroll;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
 
-                height: 500px;
+                // height: 600px;
 
                 .offer
                 {
@@ -88,7 +88,7 @@
                     border: 1px $accent solid;
                     border-radius: 10px;
 
-                    height: 400px;
+                    height: 500px;
                     width: 300px;
 
                     .title
@@ -103,7 +103,7 @@
 
                     .offer-desc
                     {
-                        height: calc(400px - 100px - ($margin)*4);
+                        height: calc(500px - 100px - ($margin)*4);
                     }
 
                     .price
