@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="buttons">
                 {componentsText[0].map((comp, key) => {
                    return (
-                        <a className="_button" href={`#${comp.title.split(' ').join('').toLowerCase()}`}>{comp.title}</a>
+                        <a className="_button" href={`#${comp.title.split(' ').join('').toLowerCase()}`} key={key}>{comp.title}</a>
                    )
                 })}
                 <a className="_button" href="#contactme" >Me Contacter</a>

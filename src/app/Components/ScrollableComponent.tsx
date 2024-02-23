@@ -7,9 +7,9 @@ export default function ScrollableComponent({title, cards, id}:{title:string, ca
         <span className="target" id={id}></span>
         <h3 className="__title">{title}</h3>
         <div className="cards">
-            {cards.map((card:ICard) => {
+            {cards.map((card:ICard, key:number) => {
               return (
-                <Card url={card.url} name={card.name} />
+                <Card url={card.url} name={card.name} key={key} />
               )
             })}
         </div>
