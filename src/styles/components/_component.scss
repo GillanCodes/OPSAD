@@ -225,15 +225,24 @@
                     {
                         height: calc(400px - 100px - ($margin)*4);
                     }
-
-                    .price
+                    .price-box
                     {
                         text-align: center;
                         font-size: 18px;
-                        text-decoration: underline;
                         height: 50px;
                         margin: $margin;
+
+                        .price {
+                            text-decoration: underline;
+                        }
+
+                        .tva {
+                            font-size: 12px;
+                            text-decoration: none;
+                            
+                        }
                     }
+                    
                 }
             }
             
