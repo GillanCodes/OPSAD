@@ -37,6 +37,11 @@
         border-radius: 10px;
         box-shadow:16px 20px 32px 0px rgba(0,0,0,0.55);
 
+        &.success
+        {
+            border-color: rgb(88, 202, 88);
+        }
+
         .field
         {
             width: 100%;
@@ -80,6 +85,12 @@
             {
                 background-color: $accent;
                 color: $background;
+            }
+
+            &.success
+            {
+                background-color: rgb(88, 202, 88);
+                color: black;
             }
         }
     }

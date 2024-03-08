@@ -34,15 +34,10 @@ export default function ContactForm() {
         <>
             <div className="contact-form">
                 <span className="target" id="contactme"></span>
-                {sended && (
-                    <div className="message">
-                        <p>Votre message a été envoyé avec succes !</p>
-                    </div>
-                )}
                 
                 <div className="container">
                     <h3 className="__title">Contactez moi !</h3>
-                    <form onSubmit={(e) => sendEmail(e)}>
+                    <form onSubmit={(e) => sendEmail(e)} className={sended ? "success" : ""}>
                         <div className="field">
                             <input type="text" className="input" placeholder="Nom" required onChange={(e) => setState({...state, surname:e.target.value})}/>
                             <input type="text" className="input" placeholder="Prénom" required onChange={(e) => setState({...state, name:e.target.value})}/>
@@ -56,7 +51,7 @@ export default function ContactForm() {
                         </div> 
                         <textarea className="textarea" placeholder="Votre demande" onChange={(e) => setState({...state, message:e.target.value})}></textarea>
                         {sended ? (
-                            <input type="submit" value="Message envoyé !" className="submit-btn" disabled  />
+                            <input type="submit" value="Message envoyé !" className="submit-btn success" disabled  />
                         ) : (
                             <>
                                 {load  ? (
