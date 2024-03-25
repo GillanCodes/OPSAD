@@ -16,7 +16,7 @@
         align-items: center;
 
         .buttons {
-            margin: $margin;
+            margin: 0 $margin;
 
             .icon
             {
@@ -29,6 +29,11 @@
             {
                 margin: $margin;
             }
+        }
+
+        .compagny
+        {
+            margin: 10px;
         }
     }
 

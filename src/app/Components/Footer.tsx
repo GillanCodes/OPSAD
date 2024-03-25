@@ -3,6 +3,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container">
                 <p className="copyright">2023 - 2024 © GillanCodes. Tous droits réservés.</p>
+                <p className="compagny">OdsAv - Siret: 987377561 00012</p>
                 <div className="buttons">
                     <a href="https://fr.linkedin.com/in/sylvie-odsav" target="_BLANK">
                         <img src="/icons/linkedin.png" alt="Linkedin" className="icon" />
@@ -11,7 +12,7 @@ export default function Footer() {
                         <img src="/icons/email.png" alt="Linkedin" className="icon" />
                     </a>
                     <a href="http://malt.com" target="_BLANK">
-                        <img src="/icons/malt.svg" alt="Linkedin" className="icon" />
+                        <img src="/icons/malt.svg" alt="Malt" className="icon" />
                     </a>
                 </div>
             </div>
