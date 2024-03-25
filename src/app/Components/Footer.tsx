@@ -11,8 +11,11 @@ export default function Footer() {
                     <a href="mailto:contact.odsav@laposte.net">
                         <img src="/icons/email.png" alt="Linkedin" className="icon" />
                     </a>
-                    <a href="http://malt.com" target="_BLANK">
+                    <a href="https://www.malt.fr/profile/sylvielegros" target="_BLANK">
                         <img src="/icons/malt.svg" alt="Malt" className="icon" />
+                    </a>
+                    <a href="https://www.instagram.com/odsav.fr/" target="_BLANK">
+                        <img src="/icons/instagram.svg" alt="Instagram" className="icon" />
                     </a>
                 </div>
             </div>
