@@ -15,24 +15,24 @@ export default function Home() {
         });
     }
 
-    function scrollDiff(curentPos:number, oldPos:number) {
-        var pos = curentPos - oldPos
-        return pos > 0
-    }
+    // function scrollDiff(curentPos:number, oldPos:number) {
+    //     var pos = curentPos - oldPos
+    //     return pos > 0
+    // }
 
-    const onScroll = useCallback((event:Event) => {
-        const win:Window = window;
-        if (previousPos == 0 && scrollDiff(win.scrollY, previousPos)) arrowClick();
-        previousPos = win.scrollY;
-    }, [])
+    // const onScroll = useCallback((event:Event) => {
+    //     const win:Window = window;
+    //     if (previousPos == 0 && scrollDiff(win.scrollY, previousPos)) arrowClick();
+    //     previousPos = win.scrollY;
+    // }, [])
 
-    useEffect(() => {
-        const win:Window = window;
-        win.addEventListener("scroll", onScroll, {passive: true});
-        return () => {
-            win.removeEventListener("scroll", onScroll);
-        }
-    }, [])
+    // useEffect(() => {
+    //     const win:Window = window;
+    //     win.addEventListener("scroll", onScroll, {passive: true});
+    //     return () => {
+    //         win.removeEventListener("scroll", onScroll);
+    //     }
+    // }, [])
 
     return (
         <div className="home">
