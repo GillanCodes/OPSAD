@@ -4,7 +4,9 @@ export default function Navbar() {
     return (
         <nav className="main_nav">
             <div className="logo_container">
-                <img src="/imgs/SlLogo.jpg" alt="Logo" className="logo" />
+                <a href="#home">
+                    <img src="/imgs/SlLogo.jpg" alt="Logo" className="logo" />
+                </a>
             </div>
             <div className="buttons">
                 {componentsText[0].map((comp, key) => {
