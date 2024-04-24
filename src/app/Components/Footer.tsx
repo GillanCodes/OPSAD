@@ -8,7 +8,7 @@ export default function Footer() {
                     <a href="https://fr.linkedin.com/in/sylvie-odsav" target="_BLANK">
                         <img src="/icons/linkedin.png" alt="Linkedin" className="icon" />
                     </a>
-                    <a href="mailto:contact.odsav@laposte.net">
+                    <a href="mailto:contact.odsav@gmail.com">
                         <img src="/icons/email.png" alt="Linkedin" className="icon" />
                     </a>
                     <a href="https://www.malt.fr/profile/sylvielegros" target="_BLANK">
